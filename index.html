@@ -9,6 +9,42 @@
 </head>
 <body>
     
+    <div class="container">
+
+        <h1>calcola il prezzo del tuo biglietto</h1>
+
+        <div class="form-container">
+
+            <div class="form-name">
+                <label for="user-name">Nome Cognome</label>
+                <input type="text" name="user-name" id="user-name">
+            </div>
+
+            <div class="form-km">
+                <label for="user-km">Km da percorrere</label>
+                <input type="text" name="user-km" id="user-km">
+            </div>
+
+            <div class="form-age">
+                <label for="user-age">Fascia d'età</label>
+                <select name="user-age" id="user-age">
+                    <option value=""></option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over65">Over65</option>
+                </select>
+            </div>
+
+            <button id="btn-send">Invia</button>
+            <button id="btn-clear">Annulla</button>
+
+        </div>
+
+        <div class="ticket-container">
+            <h2>il tuo biglietto</h2>
+        </div>
+
+    </div>
 
     <script type="text/javascript" src="js/script.js" ></script>
 </body>
