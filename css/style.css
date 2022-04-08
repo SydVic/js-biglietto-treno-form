@@ -1,3 +1,59 @@
+body {
+    background-color: #b91450;
+}
+
 .d-none{
     display: none;
 }
+
+/* INPUT FORM CONTAINER */
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+div.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem 5rem;
+}
+
+div.form {
+    display: inline-block;
+    text-align: center;
+}
+
+div.form label {
+    color: #b91450;
+    font-weight: 600;
+}
+
+div.form input, select {
+    display: block;
+    text-align: center;
+    margin: 1rem 1.5rem 2rem 1.5rem;
+    /* border-color: #b91450; */
+    border-radius: 5px;
+}
+
+div.form-btn {
+    display: block;
+    text-align: center;
+}
+
+div.form-btn button {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #b91450;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+/* OUTPUT CONTAINER */
