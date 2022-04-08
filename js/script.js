@@ -27,7 +27,33 @@ formBtnSend.addEventListener("click",
 
         // stampa in html degli output
         document.getElementById("ticket-user-name").innerHTML = userName;
-        document.getElementById("ticket-price").innerHTML = ticketPrice;
+        document.getElementById("ticket-price").innerHTML = ticketPrice.toFixed(2);
+
+        // rimozione classe d-none dal ticket container
+        const ticketContainer = document.querySelector(".ticket-container");
+        console.log(ticketContainer);
+        ticketContainer.classList.remove("d-none");
+    }
+)
+
+// cancellazione dati al click del bottone annulla
+const formBtnClear = document.getElementById("form-btn-clear");
+console.log(formBtnClear);
+formBtnClear.addEventListener("click",
+    function() {
+        // pulisco il campo user name
+        const userName = document.getElementById("user-name");
+        userName.value = "";
+        // pulisco il campo user km
+        const userKm = document.getElementById("user-km");
+        userKm.value = "";
+        // pulisco il campo user age
+        const userAge = document.getElementById("user-age");
+        userAge.value = "";
+
+        // aggiunta classe d-none dal ticket container
+        const ticketContainer = document.querySelector(".ticket-container");
+        ticketContainer.classList.add("d-none");
     }
 )
 
