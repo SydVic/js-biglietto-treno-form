@@ -79,7 +79,7 @@ div.ticket-details-container {
     padding: 1rem;
 }
 
-span.passenger-details {
+p.passenger-details {
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -90,9 +90,13 @@ div.ticket-wrapper {
     border-left: 1px solid #000000;
 }
 
+div.wrapper {
+    margin-right: 2rem;
+}
+
 div.passenger-name-wrapper {
     background-color: #808080;
-    padding: .5rem;
+    padding: .8rem;
 }
 
 p.passenger-name {
