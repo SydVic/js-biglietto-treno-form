@@ -16,17 +16,28 @@ formBtnSend.addEventListener("click",
 
         //calcolo del prezzo pieno
         let ticketPrice = userKm * 0.21;
+        let discountType = "Biglietto Standard";
 
         // controllo e applicazione sconto
         if ( userAge === "minorenne" ) {
             ticketPrice = ticketPrice * 0.8;
+            discountType = "Sconto Minorenne";
+
         } else if (userAge === "over65" ) {
             ticketPrice = ticketPrice * 0.6;
+            discountType = "Sconto Silver Age";
         }
         console.log(ticketPrice, typeof(ticketPrice));
 
+        // numero carrozza e numero biglietto
+        const wagonNumber = Math.floor(Math.random() * 10) + 1;
+        const ticketNumber = Math.floor(Math.random() * (99998 - 90000 + 1) ) + 90000;
+
         // stampa in html degli output
         document.getElementById("ticket-user-name").innerHTML = userName;
+        document.getElementById("discount-type").innerHTML = discountType;
+        document.getElementById("wagon-number").innerHTML = wagonNumber;
+        document.getElementById("ticket-number").innerHTML = ticketNumber;
         document.getElementById("ticket-price").innerHTML = ticketPrice.toFixed(2);
 
         // rimozione classe d-none dal ticket container
@@ -51,7 +62,7 @@ formBtnClear.addEventListener("click",
         const userAge = document.getElementById("user-age");
         userAge.value = "";
 
-        // aggiunta classe d-none dal ticket container
+        // aggiunta classe d-none al ticket container
         const ticketContainer = document.querySelector(".ticket-container");
         ticketContainer.classList.add("d-none");
     }
