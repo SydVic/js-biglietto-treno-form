@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #b91450;
 }
@@ -6,23 +12,29 @@ body {
     display: none;
 }
 
-/* INPUT FORM CONTAINER */
-div.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.d-inl-blk {
+    display: inline-block;
 }
 
-h1 {
+h2 {
     text-transform: uppercase;
     color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
 }
 
+/* INPUT FORM CONTAINER */
 div.form-container {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 1rem 5rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+div.container > h2 {
+    margin: 1.5rem 0;
 }
 
 div.form {
@@ -39,13 +51,11 @@ div.form input, select {
     display: block;
     text-align: center;
     margin: 1rem 1.5rem 2rem 1.5rem;
-    /* border-color: #b91450; */
     border-radius: 5px;
 }
 
 div.form-btn {
     display: block;
-    text-align: center;
 }
 
 div.form-btn button {
@@ -54,6 +64,38 @@ div.form-btn button {
     color: #b91450;
     background-color: #cccccc;
     border-radius: 5px;
+    margin: 0 .5rem;
 }
 
 /* OUTPUT CONTAINER */
+div.ticket-container > h2 {
+    margin-top: 1.5rem;
+}
+
+div.ticket-details-container {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+span.passenger-details {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+div.ticket-wrapper {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+}
+
+div.passenger-name-wrapper {
+    background-color: #808080;
+    padding: .5rem;
+}
+
+p.passenger-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}

@@ -11,7 +11,7 @@
     
     <div class="container">
 
-        <h1>calcola il prezzo del tuo biglietto</h1>
+        <h2>calcola il prezzo del tuo biglietto</h2>
 
         <div class="form-container">
 
@@ -46,11 +46,29 @@
 
             <h2>il tuo biglietto</h2>
             <div class="ticket-details-container">
-                <p id="ticket-user-name"></p>
-                <p id="discount-type"></p>
-                <p id="wagon-number"></p>
-                <p id="ticket-number"></p>
-                <p id="ticket-price"></p>
+                <span class="passenger-details">dettaglio passeggeri</span>
+                <div class="ticket-wrapper">
+                    <div class="passenger-name-wrapper d-inl-blk">
+                        <p class="passenger-name">nome passeggero</p>
+                        <p id="ticket-user-name"></p>
+                    </div>
+                    <div class="discount-wrapper d-inl-blk">
+                        <p class="discount">Offerta</p>
+                        <p id="discount-type"></p>
+                    </div>
+                    <div class="wagon-wrapper d-inl-blk">
+                        <p class="wagon">Carrozza</p>
+                        <p id="wagon-number"></p>
+                    </div>
+                    <div class="ticket-number-wrapper d-inl-blk">
+                        <p class="cp-code">Codice CP</p>
+                        <p id="ticket-number"></p>
+                    </div>
+                    <div class="ticket-price-wrapper d-inl-blk">
+                        <p class="price">Costo biglietto</p>
+                        <p id="ticket-price"></p>
+                    </div>
+                </div>
             </div>
             
         </div>
