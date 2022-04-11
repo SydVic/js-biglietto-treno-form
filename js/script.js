@@ -45,7 +45,7 @@ formBtnSend.addEventListener("click",
         console.log(ticketContainer);
         ticketContainer.classList.remove("d-none");
     }
-)
+);
 
 // cancellazione dati al click del bottone annulla
 const formBtnClear = document.getElementById("form-btn-clear");
@@ -66,7 +66,7 @@ formBtnClear.addEventListener("click",
         const ticketContainer = document.querySelector(".ticket-container");
         ticketContainer.classList.add("d-none");
     }
-)
+);
 
 
 
