@@ -31,7 +31,7 @@ formBtnSend.addEventListener("click",
 
         // numero carrozza e numero biglietto
         const wagonNumber = Math.floor(Math.random() * 10) + 1;
-        const ticketNumber = Math.floor(Math.random() * (99998 - 90000 + 1) ) + 90000;
+        const ticketNumber = Math.floor(Math.random() * (99999 - 90000) ) + 90000;
 
         // stampa in html degli output
         document.getElementById("ticket-user-name").innerHTML = userName;
@@ -52,13 +52,19 @@ const formBtnClear = document.getElementById("form-btn-clear");
 console.log(formBtnClear);
 formBtnClear.addEventListener("click",
     function() {
-        // pulisco il campo user name
+        // pulizia campi biglietto
+        document.getElementById("ticket-user-name").innerHTML = "";
+        document.getElementById("discount-type").innerHTML = "";
+        document.getElementById("wagon-number").innerHTML = "";
+        document.getElementById("ticket-number").innerHTML = "";
+        document.getElementById("ticket-price").innerHTML = "";
+        // è buono ripulire tutto per evitare che un mancato ricalcolo lasci questi risultati
+
+        // pulizia campi input utente
         const userName = document.getElementById("user-name");
         userName.value = "";
-        // pulisco il campo user km
         const userKm = document.getElementById("user-km");
         userKm.value = "";
-        // pulisco il campo user age
         const userAge = document.getElementById("user-age");
         userAge.value = "";
 
@@ -67,6 +73,5 @@ formBtnClear.addEventListener("click",
         ticketContainer.classList.add("d-none");
     }
 );
-
 
 
